@@ -144,7 +144,8 @@ h6 {
   width: 102px;
   height: 43px;
   background: url(../img/icones/testeDriver.png) 0px 3px;
-  margin: auto 0 -2px -32px;
+  margin: auto 0 -2px -32px;  
+  background-size: 115px;
 }
 .container-vertical {
   position: fixed;
