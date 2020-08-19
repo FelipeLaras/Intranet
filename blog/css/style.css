@@ -1,0 +1,35 @@
+/*Fontes da google*/
+@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+/*Fim fontes*/
+.minha_postagem {
+    width: 38%;
+    margin-top: 15px;
+    margin-left: 28%;
+    border: solid 1px;
+    padding: 18px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+label{
+    font-family: 'Rajdhani', sans-serif;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.blurBg-false {
+    background-image: url(../img/jornal.jpg);
+    background-size: 100%;
+}
+
+.menor {
+    font-size: 11px;
+}
+
+#titulo {
+    width: 81%
+}
+
+.limit {
+    font-size: 12px;
+}

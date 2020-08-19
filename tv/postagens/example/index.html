@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Slidr demo</title>
+	<link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+	<div id="timer" class="timer"></div>
+	<button data-pause class="slider__control">&#10073;&#10073;</button>
+	<button data-resume class="slider__control control-hidden">&#9658;</button>
+	<div class="slider">
+		<div data-slide="slide1" class="slide">
+			<h2 class="slide-title">Slide #1</h2>
+		</div>
+		<div data-slide="slide2" class="slide">
+			<h2 class="slide-title">Slide #2</h2>
+		</div>
+		<div data-slide="slide3" class="slide">
+			<h2 class="slide-title">Slide #3</h2>
+		</div>
+		<div class="slider__nav">
+			<button data-prev class="slider__prev">&lt;</button>
+			<div id="nav__dots" class="nav__dots"></div>
+			<button data-next class="slider__prev">&gt;</button>
+		</div>
+		<div id="slider_progress" class="slider_progress"></div>
+	</div>
+
+	<script src="../dist/Slidr.min.js"></script>
+	<script src="assets/app.js"></script>
+</body>
+
+</html>
