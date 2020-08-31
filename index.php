@@ -382,7 +382,7 @@
                     <a href='http://10.100.1.221:8090/p-pov-planning/login.xhtml' target="_blank" class="programas">
                         <div class="hvr-grow-shadow ppov"></div>
                     </a>
-                </li>                
+                </li> 
                 <!--SYONET--> 
                 <li>
                     <a href="https://syonet.gruposervopa.com.br/portal/index.jsp" target='_blank' class="programas">
@@ -407,13 +407,13 @@
                         <div class="hvr-grow-shadow bi"></div>
                     </a>
                 </li>
-                <!--
+                            
+                <!--SYONET CONSORCIO--> 
                 <li>
-                    <a href="http://auditt.gruposervopa.local:9080/SERADM/servlet/app" target='_blank' class="programas">
-                        <img src="img/icones/I_seradm.gif" class="lista">
+                    <a href="http://syonet.consorcioservopa.com.br" target='_blank' class="programas">
+                        <div class="hvr-grow-shadow syonetConsorcio"></div>
                     </a>
-                </li>
-                -->
+                </li> 
                 <!--LINX--> 
                 <li>
                     <a href='http://10.100.1.171:81/LinxDMSPrincipal/#/login' target="_blank" class="programas" title='funciona penas no navegador Google Chrome'>

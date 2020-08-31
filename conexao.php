@@ -1,10 +1,10 @@
 ﻿<?php
     //variaveis para conexao
-    $servername = "10.100.1.65";
-    $username = "blog";
-    $password = "Servopa123#";
-    $dbname = "blog";
-    $port = "3306";
+    $servername = "";
+    $username = "";
+    $password = "";
+    $dbname = "";
+    $port = "";
 
 $banco_blog = mysqli_connect($servername, $username, $password, $dbname, $port);
 

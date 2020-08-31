@@ -90,61 +90,68 @@ h6 {
   width: 112px;
   height: 35px;
   background: url(../img/icones/programas.jpg) -28px -86px;
-  margin: auto 0 -2px -33px;
+  margin: auto 0 -6px -33px;
 }
 .sisrev {
   width: 112px;
   height: 35px;
   background: url(../img/icones/programas.jpg) -27px -19px;
-  margin: auto 0 -2px -33px;
+  margin: auto 0 -6px -33px;
 }
 .ppov {
   width: 112px;
   height: 62px;
   background: url(../img/icones/programas.jpg) -27px -342px;
-  margin: auto 0 -2px -35px
+  margin: auto 0 -6px -35px
 }
 .syonet {
     width: 112px;
   height: 35px;
   background: url(../img/icones/programas.jpg) -29px -278px;
-  margin: auto 0 -2px -33px;
+  margin: auto 0 -6px -33px;
+}
+.syonetConsorcio {
+  width: 140px;
+  height: 34px;
+  background: url(../img/icones/programas.jpg) 0px 302px;
+  margin: auto 0 -6px -49px;
+  background-size: 145px;
 }
 .roover {
     width: 133px;
     height: 35px;
     background: url(../img/icones/programas.jpg) -16px -215px;
-    margin: auto 0 -2px -45px;
+    margin: auto 0 -6px -45px;
 }
 .bi {
     width: 135px;
     height: 35px;
     background: url(../img/icones/programas.jpg) -21px -505px;
-    margin: auto 0 -2px -50px;
+    margin: auto 0 -6px -41px;
 }
 .gmail {
   width: 112px;
   height: 44px;
   background: url(../img/icones/programas.jpg) -30px -560px;
-  margin: auto 0 -2px -32px;
+  margin: auto 0 -6px -32px;
 }
 .fluig {
   width: 133px;
   height: 63px;
   background: url(../img/icones/programas.jpg) -16px -416px;
-  margin: auto 0 -2px -46px;
+  margin: auto 0 -6px -46px;
 }
 .linx {
     width: 136px;
     height: 77px;
     background: url(../img/icones/programas.jpg) -20px -639px;
-    margin: auto 0 -2px -45px;
+    margin: auto 0 -6px -45px;
 }
 .testeDriver {
   width: 102px;
   height: 43px;
-  background: url(../img/icones/testeDriver.png) 0px 3px;
-  margin: auto 0 -2px -32px;  
+  background: url(../img/icones/programas.jpg) 0px 212px;
+  margin: auto 0 -6px -32px;  
   background-size: 115px;
 }
 .container-vertical {
