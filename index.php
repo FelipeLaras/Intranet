@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Intranet Grupo Servopa</title>
+    <title>Intranet Rede Paranapart</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords">
     <meta name="description">
