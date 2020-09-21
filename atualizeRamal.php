@@ -1,6 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<?php 
+    include 'conexao.php'; 
 
+    //GET IP DO USUÁRIO
+    $ip = $_SERVER['REMOTE_ADDR'];
+
+    //DATA DE HOJE
+    $dataHoje = date('d/m/yy');
+
+    //salvando no banco
+    if(!empty($ip)){
+        //salvando ip para contagem de quantos estão acessando a pagina
+        $insertLog = "INSERT INTO atualize_ramal_logs (ip, dataCriacao) VALUES ('".$ip."', '".$dataHoje."')";
+
+        if(!$resultInsert = $conn->query($insertLog)){ printf("Erro: %s\n", $conn->error); }
+
+        $conn->close();
+    }
+?>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
