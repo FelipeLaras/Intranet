@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<?php 
-    include 'conexao.php'; 
+<?php
+    /* Informa o nível dos erros que serão exibidos */
+    error_reporting(E_ALL);
+    
+    /* Habilita a exibição de erros */
+    ini_set("display_errors", 1);
+
+    //chamando banco de dados
+    require_once('conexao.php'); 
 
     //GET IP DO USUÁRIO
     $ip = $_SERVER['REMOTE_ADDR'];
@@ -8,14 +15,12 @@
     //DATA DE HOJE
     $dataHoje = date('d/m/yy');
 
-    //salvando no banco
-    if(!empty($ip)){
-        //salvando ip para contagem de quantos estão acessando a pagina
-        $insertLog = "INSERT INTO atualize_ramal_logs (ip, dataCriacao) VALUES ('".$ip."', '".$dataHoje."')";
+    $insertLog = "INSERT INTO atualize_ramal_logs (ip, dataCriacao) VALUES ('".$ip."', '".$dataHoje."')";
 
-        if(!$resultInsert = $conn->query($insertLog)){ printf("Erro: %s\n", $conn->error); }
+    if(!$result = $banco_blog->query($insertLog)){
 
-        $conn->close();
+        printf("Erro de query: %s\n", $banco_blog->error);
+
     }
 ?>
 <html lang="pt-br">
