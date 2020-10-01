@@ -4,14 +4,9 @@
   if($_GET['pagina'] != 4){
     header('location: 404.php');
   }
-  require 'header.php';
+  require_once('header.php');
 
-  require 'menu_lateral.php'; 
-
-  $post_query = "SELECT titulo, mensagem FROM blog_post WHERE id_postagem = ".$_GET['id_post']."";
-  $result_post = mysqli_query($conn, $post_query);
-  $post = mysqli_fetch_assoc($result_post);
-
+  require_once('menu_lateral.php'); 
 ?>
 <!--main content start-->
 <section id="main-content">
@@ -31,8 +26,7 @@
             <div class="col-lg-6" style="width: 86%;">
                 <section class="panel">
                     <div class="panel-body">
-                        <form class="form-validate form-horizontal" id="feedback_form" method="POST"
-                            action="salvar_postagem.php?pagina=5" enctype="multipart/form-data" autocomplete="off">
+                        <form class="form-validate form-horizontal" id="feedback_form" method="POST" action="salvar_postagem.php?pagina=5" enctype="multipart/form-data" autocomplete="off">
                             <div class="form-group ">
                                 <label for="cname" class="control-label col-lg-2">Titulo:</label>
                                 <div class="col-lg-10">
@@ -43,15 +37,13 @@
                             <div class="form-group">
                                 <label for="agree" class="control-label col-lg-2 col-sm-3">Tipo da postagem:</label>
                                 <div class="col-lg-10 col-sm-9">
-                                    <input class="form-check-input" type="radio" id="tipoPostagem1" value="0"
-                                        name="tipo_postagem" checked="">
+                                    <input class="form-check-input" type="radio" id="tipoPostagem1" value="0" name="tipo_postagem" checked="">
                                     <span class="form-check-label" for="tipoPostagem1">
                                         Simples                                          
                                     </span>
                                 </div>
                                 <div class="col-lg-10 col-sm-9">
-                                    <input class="form-check-input" type="radio" id="tipoPostagem2" value="1"
-                                        name="tipo_postagem">
+                                    <input class="form-check-input" type="radio" id="tipoPostagem2" value="1" name="tipo_postagem">
                                     <span class="form-check-label" for="tipoPostagem2">
                                         Modal
                                         <a href="javascript:">

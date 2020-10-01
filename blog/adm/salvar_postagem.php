@@ -3,7 +3,7 @@
 session_start();
 
 //banco de dados
-include 'conexao.php';
+require_once('conexao.php');
 
 if($_GET['pagina'] == 5){//apenas uma imagem
     // SALVANDO OS FILES 
