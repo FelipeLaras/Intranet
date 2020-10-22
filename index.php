@@ -238,6 +238,7 @@
                     </li>
                     <li class="drop-down"><a href="#">Programas</a>
                         <ul>
+                            <li><a href="https://cotavw.com.br" target="_blanck">COTAVW</a></li>
                             <li><a href="http://10.100.1.223/#/login" target="_blanck">TESTE-DRIVER</a></li>
                             <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blanck">GMAIL</a></li>
                             <li><a href="http://gruposervopa.fluig.com/portal/p/1/home" target="_blanck">FLUIG</a></li>
