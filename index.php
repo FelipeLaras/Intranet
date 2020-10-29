@@ -238,13 +238,13 @@
                     </li>
                     <li class="drop-down"><a href="#">Programas</a>
                         <ul>
-                            <li><a href="https://cotavw.com.br" target="_blanck">COTAVW</a></li>
-                            <li><a href="http://10.100.1.223/#/login" target="_blanck">TESTE-DRIVER</a></li>
-                            <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blanck">GMAIL</a></li>
-                            <li><a href="http://gruposervopa.fluig.com/portal/p/1/home" target="_blanck">FLUIG</a></li>
-                            <li><a href="http://auditt.gruposervopa.local:9080/SISCON/servlet/app" target="_blanck">SISCON</a></li>
-                            <li><a href="http://auditt.gruposervopa.local:9080/SERADM/servlet/app" target="_blanck">SERADM</a></li>
-                            <li><a href="http://sisrev.gruposervopa.local:9080/SISREV/servlet/app" target="_blanck">SISREV</a></li>
+                            <li><a href="https://cotavw.com.br" target="_blanck">Cotavw</a></li>
+                            <li><a href="http://10.100.1.223/#/login" target="_blanck">Teste-Driver</a></li>
+                            <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blanck">Gmail</a></li>
+                            <li><a href="http://gruposervopa.fluig.com/portal/p/1/home" target="_blanck">Fluig</a></li>
+                            <li><a href="http://auditt.gruposervopa.local:9080/SISCON/servlet/app" target="_blanck">Siscon</a></li>
+                            <li><a href="http://auditt.gruposervopa.local:9080/SERADM/servlet/app" target="_blanck">Seradm</a></li>
+                            <li><a href="http://sisrev.gruposervopa.local:9080/SISREV/servlet/app" target="_blanck">Sisrev</a></li>
                             <li><a href="http://intranet.gruposervopa.com.br/appftp.html" target="_blanck">FTP</a></li>
                             <li><a href="http://intranet.gruposervopa.com.br/appftp-sisrev.html" target="_blanck">FTP Sisrev</a></li>
                             <li><a href="https://apps.autoavaliar.com.br/login/app" target="_blanck">Auto Avaliar</a></li>
