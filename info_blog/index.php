@@ -46,18 +46,23 @@
   //limite de publicação
   $limit = 6;
 
+  //datahoje
+
+  $dataHoje = date('d/m/yy');
+
   //tipo de arquivo
   $video = "video/mp4";
   $pdf = "application/pdf";
 
 	//pesquisa para o BD
 	$busca = "SELECT 
-              id_postagem, 
-              titulo, 
-              tipo_arquivo,
-              file_img AS caminho, 
-              mensagem, 
-              data,
+              BP.id_postagem, 
+              BP.titulo, 
+              BP.tipo_arquivo,
+              BP.file_img AS caminho, 
+              BP.mensagem, 
+              BP.data,
+              BP.data_drop,
               BU.exibicao AS usuario,
               BP.carousel
             FROM
@@ -77,124 +82,128 @@
     $result = mysqli_query($banco_blog, $comentario); 
     $row_comentario = mysqli_fetch_assoc($result);
 
-    if($dados['mensagem'] != NULL){
-      echo "<article class='blog-post'>
-              <div class='post-heading'><!--titulo-->
-                <h3><a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'>".$dados['titulo']."</a></h3>
-              </div><!--fim titulo-->
-              <div class='row'><!--corpo-->
-                  <div class='span3'><!--imagem-->
-                    <div class='post-image'>";
-                        if($dados['tipo_arquivo'] == $video){
-                          echo "
-                              <video width='295' controls>
-                                  <source src='../blog/'".$dados['caminho']."' type='video/mp4'>
-                                  <source src='../blog/".$dados['caminho']."' type='video/ogg'>
-                                  Seu navegador não suporta HTML5 video.
-                              </video>";
-                        }elseif($dados['tipo_arquivo'] == $pdf){
-                          echo "<iframe src='../blog/".$dados['caminho']."' height='400' width='290'></iframe>";
-                        }else{
-                          echo "<a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'><img src='../blog/".$dados['caminho']."' style='width: 100%;'/></a>";
-                        }
-        echo"
+    if($dados['data_drop'] > $dataHoje){
+
+      if($dados['mensagem'] != NULL){
+        echo "<article class='blog-post'>
+                <div class='post-heading'><!--titulo-->
+                  <h3><a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'>".$dados['titulo']."</a></h3>
+                </div><!--fim titulo-->
+                <div class='row'><!--corpo-->
+                    <div class='span3'><!--imagem-->
+                      <div class='post-image'>";
+                          if($dados['tipo_arquivo'] == $video){
+                            echo "
+                                <video width='295' controls>
+                                    <source src='../blog/'".$dados['caminho']."' type='video/mp4'>
+                                    <source src='../blog/".$dados['caminho']."' type='video/ogg'>
+                                    Seu navegador não suporta HTML5 video.
+                                </video>";
+                          }elseif($dados['tipo_arquivo'] == $pdf){
+                            echo "<iframe src='../blog/".$dados['caminho']."' height='400' width='290'></iframe>";
+                          }else{
+                            echo "<a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'><img src='../blog/".$dados['caminho']."' style='width: 100%;'/></a>";
+                          }
+          echo"
+                      </div>
+                    </div><!--Fim imagem-->
+  
+                    <div class='span5'>
+                    <ul class='post-meta'>
+                      <li class='first'>
+                        <i class='icon-calendar'></i><span>".$dados['data']."</span>
+                      </li>
+                      <li>
+                        <i class='icon-list-alt'></i>
+                        <span>
+                          <a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank' title='Adicione um comentário'>".$row_comentario['contagem']." comentários</a>
+                        </span>
+                      </li>
+                      <li class= 'last'>
+                        <i class='icon-tags'></i>
+                        <span>
+                          <a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'>".$dados['usuario']."</a>
+                        </span>
+                      </li>
+                    </ul>
+                    <div class='clearfix'>
                     </div>
-                  </div><!--Fim imagem-->
-
-                  <div class='span5'>
-                  <ul class='post-meta'>
-                    <li class='first'>
-                      <i class='icon-calendar'></i><span>".$dados['data']."</span>
-                    </li>
-                    <li>
-                      <i class='icon-list-alt'></i>
-                      <span>
-                        <a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank' title='Adicione um comentário'>".$row_comentario['contagem']." comentários</a>
-                      </span>
-                    </li>
-                    <li class= 'last'>
-                      <i class='icon-tags'></i>
-                      <span>
-                        <a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'>".$dados['usuario']."</a>
-                      </span>
-                    </li>
-                  </ul>
-                  <div class='clearfix'>
+                    <p>
+                      ".$dados['mensagem']."
+                    </p>
                   </div>
-                  <p>
-                    ".$dados['mensagem']."
-                  </p>
-                </div>
-              </div><!--fim corpo-->
-            </article>";
-    }else{
-
-      echo "<article class='blog-post'>
-              <div class='post-heading'>
-                <h3><a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'>".$dados['titulo']."</a></h3>
-              </div>";
-
-              if($dados['tipo_arquivo'] == $video){
-                echo "
-                    <video width='560' controls>
-                        <source src='../blog/".$dados['caminho']."' type='video/mp4'>
-                        <source src='../blog/".$dados['caminho']."' type='video/ogg'>
-                        Seu navegador não suporta HTML5 video.
-                    </video>";
-              }elseif($dados['tipo_arquivo'] == $pdf){
-                echo "<iframe src='../blog/".$dados['caminho']."'width='570' height='300'></iframe>";
-              }elseif($dados['carousel'] == 1){
-
-                $carrorel = "SELECT file_img FROM blog_post_carousel WHERE id_postagem = ".$dados['id_postagem']."";
-
-                $reCarrosel = mysqli_query($banco_blog, $carrorel);
-
-                echo "<div class='container'>
-                <div id='myCarousel' class='carousel slide' data-ride='carousel'>
-                  <!-- Wrapper for slides -->
-                  <div class='carousel-inner'>";
-              
-                  $conte = 0;
-              
-                  while($row_carrosel = mysqli_fetch_assoc($reCarrosel)){
-              
-                  switch ($conte) {
-                    case '0':
-                      echo "<div class='item active'><img src='../blog/".$row_carrosel['file_img']."'></div>";
-                    break;
-                                         
-                    default:
-                      echo "<div class='item'><img src='../blog/".$row_carrosel['file_img']."'></div>";
+                </div><!--fim corpo-->
+              </article>";
+      }else{
+  
+        echo "<article class='blog-post'>
+                <div class='post-heading'>
+                  <h3><a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'>".$dados['titulo']."</a></h3>
+                </div>";
+  
+                if($dados['tipo_arquivo'] == $video){
+                  echo "
+                      <video width='560' controls>
+                          <source src='../blog/".$dados['caminho']."' type='video/mp4'>
+                          <source src='../blog/".$dados['caminho']."' type='video/ogg'>
+                          Seu navegador não suporta HTML5 video.
+                      </video>";
+                }elseif($dados['tipo_arquivo'] == $pdf){
+                  echo "<iframe src='../blog/".$dados['caminho']."'width='570' height='300'></iframe>";
+                }elseif($dados['carousel'] == 1){
+  
+                  $carrorel = "SELECT file_img FROM blog_post_carousel WHERE id_postagem = ".$dados['id_postagem']."";
+  
+                  $reCarrosel = mysqli_query($banco_blog, $carrorel);
+  
+                  echo "<div class='container'>
+                  <div id='myCarousel' class='carousel slide' data-ride='carousel'>
+                    <!-- Wrapper for slides -->
+                    <div class='carousel-inner'>";
+                
+                    $conte = 0;
+                
+                    while($row_carrosel = mysqli_fetch_assoc($reCarrosel)){
+                
+                    switch ($conte) {
+                      case '0':
+                        echo "<div class='item active'><img src='../blog/".$row_carrosel['file_img']."'></div>";
+                      break;
+                                           
+                      default:
+                        echo "<div class='item'><img src='../blog/".$row_carrosel['file_img']."'></div>";
+                    }
+                    $conte++;    
                   }
-                  $conte++;    
-                }
-              
-              echo "
+                
+                echo "
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class='left carousel-control' href='#myCarousel' data-slide='prev'><
+                    </a>
+                    <a class='right carousel-control' href='#myCarousel' data-slide='next'>>
+                    </a>
                   </div>
-              
-                  <!-- Left and right controls -->
-                  <a class='left carousel-control' href='#myCarousel' data-slide='prev'><
-                  </a>
-                  <a class='right carousel-control' href='#myCarousel' data-slide='next'>>
-                  </a>
-                </div>
-              </div>";
+                </div>";
+  
+                }else{
+                  echo "<a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'><img src='../blog/".$dados['caminho']."' style='width: 100%;'/></a>";
+                }
+        echo"
+                <ul class='post-meta'>
+                  <li class='first'><i class='icon-calendar'></i><span>".$dados['data']."</span></li>
+                  <li><i class='icon-list-alt'></i><span><a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank' title='Adicione um comentário'>".$row_comentario['contagem']." comentários</a></span></li>
+                  <li class= 'last'><i class='icon-tags'></i><span><a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'>".$dados['usuario']."</a></span></li>
+                </ul>
+              </article>";
+  
+      }//Fim IF postagem     
+  
 
-              }else{
-                echo "<a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'><img src='../blog/".$dados['caminho']."' style='width: 100%;'/></a>";
-              }
-      echo"
-              <ul class='post-meta'>
-                <li class='first'><i class='icon-calendar'></i><span>".$dados['data']."</span></li>
-                <li><i class='icon-list-alt'></i><span><a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank' title='Adicione um comentário'>".$row_comentario['contagem']." comentários</a></span></li>
-                <li class= 'last'><i class='icon-tags'></i><span><a href='../blog/postagem.php?id_post=".$dados['id_postagem']."' target='_blank'>".$dados['usuario']."</a></span></li>
-              </ul>
-            </article>";
+    }//fim if data
 
-    }//Fim IF postagem
-
-      
-
+    
   }//Fim While postagem
   ?>
 
