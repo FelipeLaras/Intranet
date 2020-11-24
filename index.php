@@ -392,7 +392,7 @@
                 </li>               
                 <!--FLUIG--> 
                 <li>
-                    <a href="http://gruposervopa.fluig.com/portal/p/1/home" target='_blank' class="programas">
+                    <a href="https://gruposervopa.fluig.com/portal/p/1/home" target='_blank' class="programas">
                         <div class="hvr-grow-shadow fluig"></div>
                     </a>
                 </li>
