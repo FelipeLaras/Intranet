@@ -241,7 +241,7 @@
                             <li><a href="https://cotavw.com.br" target="_blanck">Cotavw</a></li>
                             <li><a href="http://10.100.1.223/#/login" target="_blanck">Teste-Driver</a></li>
                             <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blanck">Gmail</a></li>
-                            <li><a href="http://gruposervopa.fluig.com/portal/p/1/home" target="_blanck">Fluig</a></li>
+                            <li><a href="https://gruposervopa.fluig.com/portal/p/1/home" target="_blanck">Fluig</a></li>
                             <li><a href="http://auditt.gruposervopa.local:9080/SISCON/servlet/app" target="_blanck">Siscon</a></li>
                             <li><a href="http://auditt.gruposervopa.local:9080/SERADM/servlet/app" target="_blanck">Seradm</a></li>
                             <li><a href="http://sisrev.gruposervopa.local:9080/SISREV/servlet/app" target="_blanck">Sisrev</a></li>
