@@ -95,14 +95,20 @@
 $video = "video/mp4";
 $pdf = "application/pdf";
 
- if($_GET['msn'] == 1){
-  echo "<div class='alert alert-success'>
-          <button type='button' class='close' data-dismiss='alert'>×</button>
-          <strong>Atenção</strong> Comentário adicionado com sucesso!
-        </div>";
- }
-	//conexão com o bando de dados
-	require 'conexao.php';
+switch ($_GET['msn']) {
+  case '1':
+    echo "<div class='alert alert-success'><button type='button' class='close' data-dismiss='alert'>×</button><strong>Atenção</strong> Comentário adicionado com sucesso!</div>";
+  break;
+
+  case '2':
+    echo "<div class='alert alert-warning'><button type='button' class='close' data-dismiss='alert'>×</button><strong>Atenção</strong> Seu comentário foi bloqueado por conter alguma palavra impropria!</div>";
+  break;
+  
+}
+
+//conexão com o bando de dados
+  require_once('conexao.php');
+  
 	//pesquisa para o BD
 	$busca = "SELECT 
               BP.id_postagem, 

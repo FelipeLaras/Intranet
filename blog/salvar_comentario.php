@@ -2,6 +2,24 @@
     //chamando banco de dados
     include 'conexao.php';
 
+    //Impedir link nos comentário:
+    $comentario = explode(" ", $_POST['comentario']);
+
+    foreach($comentario as $string){
+
+        $queryBloquearString = 'SELECT * FROM blog_palavrasBloquear WHERE palavra LIKE "%'.$string.'%" ';
+
+        $resultBloquearString = $conn->query($queryBloquearString);
+
+        if($bloquearLink = $resultBloquearString->fetch_assoc()){
+
+            header('location: postagem.php?id_post='.$_POST['id_postagem'].'&msn=2');
+            exit;
+
+        }
+
+    }
+    
     //data de hoje
     $data = date('d/m/Y');
 
