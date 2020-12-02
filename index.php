@@ -245,7 +245,7 @@
                     <li class="drop-down"><a href="#">Programas</a>
                         <ul>
                             <li><a href="https://cotavw.com.br" target="_blanck">Cotavw</a></li>
-                            <li><a href="http://10.100.1.45/smartshare/" target="_blanck">Selbetti</a></li>
+                            <li><a href="http://10.100.1.45/smartshare/" target="_blanck">SMARTSHARE</a></li>
                             <li><a href="http://10.100.1.223/#/login" target="_blanck">Teste-Driver</a></li>
                             <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blanck">Gmail</a></li>
                             <li><a href="https://gruposervopa.fluig.com/portal/home" target="_blanck">Fluig</a></li>
