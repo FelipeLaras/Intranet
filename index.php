@@ -184,8 +184,8 @@
                             <li><a href="https://sites.google.com/servopa.com.br/gestaocompartilhada/gest%C3%A3o-compartilhada">Gestão Compartilhada</a></li>
                             <li class="drop-down"><a href="#">T.I</a>
                                 <ul>
-                                    <li><a href="ti/index.php" target="_blanck">Inventario</a></li>
-                                    <li><a href="https://sites.google.com/a/servopa.com.br/manual-grupo-servopa/home" target="_blanck">Manuais / Atualizações</a></li>
+                                    <li><a href="ti/index.php" target="_blanck">Inventário</a></li>
+                                    <li><a href="https://sites.google.com/a/servopa.com.br/manual-grupo-servopa/home" target="_blanck">Manuais / Atualizações / Documentos</a></li>
                                 </ul>
                             </li>
                             <li><a href="https://sites.google.com/servopa.com.br/cadastro/home">Cadastro</a></li>
