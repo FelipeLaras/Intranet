@@ -20,7 +20,7 @@ if($_GET['ativa'] == 'sim'){//ativando
 
     if(empty($_GET['id'])){
         //postagem
-        $desativa = "UPDATE blog_post SET deletar = 1 WHERE id_postagem = ".$_GET['id_post']."";
+        $desativa = "UPDATE blog_post SET deletar = 1, tipo_postagem = 0 WHERE id_postagem = ".$_GET['id_post']."";
         $result = mysqli_query($conn, $desativa) or die(mysqli_error($conn));
     }else{
         //usuário

@@ -201,6 +201,10 @@
       }//Fim IF postagem     
   
 
+    }else{
+      //postagem
+      $desativa = "UPDATE blog_post SET deletar = 1, tipo_postagem = 0 WHERE id_postagem = ".$dados['id_postagem']."";
+      $result = mysqli_query($banco_blog, $desativa) or die(mysqli_error($conn));
     }//fim if data
 
     
