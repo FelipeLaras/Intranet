@@ -171,7 +171,7 @@
                             <li class="drop-down"><a href="#">Consórcio</a>
                                 <ul>
                                     <li><a href="https://forms.gle/kYPHgQd7zDLctuqE6" target="_blanck">Requisição para desenvolvimento de TI</a></li>
-                                    <li><a href="https://drive.google.com/file/d/1q3YqOncE3rGl_JlHmKAmSh1bpasVHFtP/view?usp=sharing" target="_blanck">
+                                    <li><a href="consorcio.html" target="_blanck">
                                             <p>Manual de Prevenção à Lavagem de Dinheiro</p>
                                             <p style="font-size: 10px;">(Quarta Edição de 01/10/2020)</p>
                                         </a></li>
