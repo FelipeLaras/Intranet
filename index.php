@@ -173,7 +173,7 @@
                                     <li><a href="https://forms.gle/kYPHgQd7zDLctuqE6" target="_blanck">Requisição para desenvolvimento de TI</a></li>
                                     <li><a href="https://drive.google.com/file/d/104ZK7ONhNdzyvmh6QOrjXMnSS63iEh2P/view" target="_blanck">
                                             <p>Manual de Prevenção à Lavagem de Dinheiro</p>
-                                            <p style="font-size: 10px;">(Terceira Edição de 29 de junho de 2020)</p>
+                                            <p style="font-size: 10px;">(Quarta Edição de 01/10/2020)</p>
                                         </a></li>
                                     <li><a href="https://drive.google.com/file/d/1qdeuYJXNiWTwXcLZiYtcYM5FCgoyeaZR/view?usp=sharing" target="_blanck">Código de Ética e Conduta</a></li>
                                     <li><a href="https://drive.google.com/file/d/1DRDlb5oDKsSA8KZZF4iWcECGYFzVXDYm/view?usp=sharing" target="_blanck">Vídeo Treinamento do Programa de Integridade/PLD</a></li>
