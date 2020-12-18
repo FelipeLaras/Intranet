@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <?php 
+if($_SESSION["id"] == NULL){
+  header('location: index.php');
+}
+
+
 //validando
 if($_GET['pagina'] != 1){
   header('location: 404.php');
