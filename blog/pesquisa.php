@@ -1,9 +1,5 @@
-<?php   //ocultando erros do PHP
-   error_reporting(0);
-   ini_set(“display_errors”, 0 );
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -22,7 +18,7 @@
   <link href="assets/color/default.css" rel="stylesheet">
 
   <!-- fav and touch icons -->
-  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  <link href="../img/favicon.ico" rel="icon">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
