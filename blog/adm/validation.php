@@ -14,7 +14,7 @@ $query_user = "SELECT
 					senha,
 					deletar
 				FROM 
-					blog.blog_user 
+					blog_user 
 				WHERE 
 					nome like '%".$_POST['login']."%' AND 
 					senha like '%".$_POST['senha']."%'";

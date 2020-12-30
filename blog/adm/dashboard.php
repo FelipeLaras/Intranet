@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <?php 
-if($_SESSION["id"] == NULL){
+session_start();
+
+if(isset($_SESSION["id"])){
   header('location: index.php');
 }
-
 
 //validando
 if($_GET['pagina'] != 1){
@@ -24,7 +24,7 @@ $postagens_query = "SELECT
 $result_postagem = mysqli_query($conn, $postagens_query);
 
 ?>
-
+<!DOCTYPE html>
     <!--main content start-->
     <section id="main-content">
       <section class="wrapper">
