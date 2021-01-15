@@ -383,7 +383,7 @@
                         </li>
                         <!--BI-->
                         <li>
-                            <a href="https://srvqlikserver.gruposervopa.local" target='_blank' class="programas">
+                            <a href="https://srvqlikserver.gruposervopa.com.br" target='_blank' class="programas">
                                 <div class="hvr-grow-shadow bi"></div>
                             </a>
                         </li>
