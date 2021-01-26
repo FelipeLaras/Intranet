@@ -106,8 +106,8 @@
                         <img src="img/icones/EngrenagemGLPI.JPG" alt="EngrenagemGLPI" class="imgGLPI">
                     </a>
                 </div>
-                <p><i class="far fa-hand-point-right"></i> Agora basta localizar os campos de <b class="red">RAMAL</b> e
-                    <b class="red">VOIP</b> E <b class="red">LOCALIZAÇÃO</b> alterar e clicar em SALVAR!</p>
+                <p><i class="far fa-hand-point-right"></i> Agora basta localizar os campos de <b class="red">RAMAL</b>,
+                    <b class="red">VOIP</b> e <b class="red">LOCALIZAÇÃO</b> alterar e clicar em SALVAR!</p>
                 <div class="imgGLPI">
                     <a href="img/icones/FormularioGLPI.JPG" class="ampliarIMG" target="_blank">
                         <img src="img/icones/FormularioGLPI.JPG" alt="FormularioGLPI" class="imgGLPI">
