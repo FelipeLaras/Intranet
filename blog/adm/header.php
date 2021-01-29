@@ -1,6 +1,4 @@
 <?php
-//ocultando erros do PHP
-error_reporting(0);
 //iniciando as sessões
 session_start();
 //banco de dados
@@ -9,6 +7,7 @@ require 'conexao.php';
 if($_SESSION["id"] == NULL){
   header('location: index.php');
 }
+
 
 /* --------------- CONTADOR DE COMENTÁRIOS --------------- */
 
