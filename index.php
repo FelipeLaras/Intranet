@@ -242,26 +242,6 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="drop-down"><a href="#">Programas</a>
-                        <ul>
-                            <li><a href="https://cotavw.com.br" target="_blanck">Cotavw</a></li>
-                            <li><a href="http://10.100.1.45/smartshare/" target="_blanck">SMARTSHARE</a></li>
-                            <li><a href="http://10.100.1.223/#/login" target="_blanck">Teste-Driver</a></li>
-                            <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blanck">Gmail</a></li>
-                            <li><a href="https://gruposervopa.fluig.com/portal/home" target="_blanck">Fluig</a></li>
-                            <li><a href="http://auditt.gruposervopa.local:9080/SISCON/servlet/app" target="_blanck">Siscon</a></li>
-                            <li><a href="http://auditt.gruposervopa.local:9080/SERADM/servlet/app" target="_blanck">Seradm</a></li>
-                            <li><a href="http://sisrev.gruposervopa.local:9080/SISREV/servlet/app" target="_blanck">Sisrev</a></li>
-                            <li><a href="http://intranet.gruposervopa.com.br/appftp.html" target="_blanck">FTP</a></li>
-                            <li><a href="http://intranet.gruposervopa.com.br/appftp-sisrev.html" target="_blanck">FTP Sisrev</a></li>
-                            <li><a href="https://apps.autoavaliar.com.br/login/app" target="_blanck">Auto Avaliar</a></li>
-                            <li><a href="apollo-nbs.rdp" download="">Apollo / NBS</a></li>
-                            <li><a href="http://10.100.1.18/WebCRM/Forms/frmLogin.aspx" target="_blanck">Web CRM</a></li>
-                            <li><a href="https://fisystem.com.br/fi/" target="_blanck">F&I System</a></li>
-                            <li><a href="https://syonet.gruposervopa.com.br/portal/index.jsp" target="_blanck">Syonet CRM</a></li>
-
-                        </ul>
-                    </li>
                     <li class="drop-down"><a href="#">Notas Eletrônicas</a>
                         <ul>
                             <li class="drop-down"><a href="#">DETRAN</a>
@@ -317,6 +297,26 @@
                                     <li><a href="https://fazenda.rs.gov.br/inicial" target="_blank">RS</a></li>
                                 </ul>
                             </li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Programas</a>
+                        <ul>
+                            <li><a href="https://cotavw.com.br" target="_blanck">Cotavw</a></li>
+                            <li><a href="http://10.100.1.45/smartshare/" target="_blanck">SMARTSHARE</a></li>
+                            <li><a href="http://10.100.1.223/#/login" target="_blanck">Teste-Driver</a></li>
+                            <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blanck">Gmail</a></li>
+                            <li><a href="https://gruposervopa.fluig.com/portal/home" target="_blanck">Fluig</a></li>
+                            <li><a href="http://auditt.gruposervopa.local:9080/SISCON/servlet/app" target="_blanck">Siscon</a></li>
+                            <li><a href="http://auditt.gruposervopa.local:9080/SERADM/servlet/app" target="_blanck">Seradm</a></li>
+                            <li><a href="http://sisrev.gruposervopa.local:9080/SISREV/servlet/app" target="_blanck">Sisrev</a></li>
+                            <li><a href="http://intranet.gruposervopa.com.br/appftp.html" target="_blanck">FTP</a></li>
+                            <li><a href="http://intranet.gruposervopa.com.br/appftp-sisrev.html" target="_blanck">FTP Sisrev</a></li>
+                            <li><a href="https://apps.autoavaliar.com.br/login/app" target="_blanck">Auto Avaliar</a></li>
+                            <li><a href="apollo-nbs.rdp" download="">Apollo / NBS</a></li>
+                            <li><a href="http://10.100.1.18/WebCRM/Forms/frmLogin.aspx" target="_blanck">Web CRM</a></li>
+                            <li><a href="https://fisystem.com.br/fi/" target="_blanck">F&I System</a></li>
+                            <li><a href="https://syonet.gruposervopa.com.br/portal/index.jsp" target="_blanck">Syonet CRM</a></li>
+
                         </ul>
                     </li>
                 </ul>
