@@ -179,7 +179,12 @@
                                     <li><a href="https://drive.google.com/file/d/1DRDlb5oDKsSA8KZZF4iWcECGYFzVXDYm/view?usp=sharing" target="_blanck">Vídeo Treinamento do Programa de Integridade/PLD</a></li>
                                 </ul>
                             </li>
-                            <li><a href="https://sites.google.com/a/servopa.com.br/rh/home">R.H</a></li>
+                            <li class="drop-down"><a href="#">R.H</a>
+                                <ul>
+                                    <li><a href="https://sites.google.com/a/servopa.com.br/rh/home"target="_blanck">Portal R.H</a></li>
+                                    <li><a href="revistaacelere.html" target="_blanck">Revista Acelere</a></li>
+                                </ul>
+                            </li>
                             <li><a href="https://sites.google.com/a/servopa.com.br/auditoria/">Auditoria</a></li>
                             <li><a href="https://sites.google.com/servopa.com.br/gestaocompartilhada/gest%C3%A3o-compartilhada">Gestão Compartilhada</a></li>
                             <li class="drop-down"><a href="#">T.I</a>

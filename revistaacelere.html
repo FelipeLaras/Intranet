@@ -14,20 +14,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <!--fontawesome-->
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+
+    <!--style-->
+    <link href="css/style-revista.css" rel="stylesheet">
+
     <title>Revista Acelere</title>
 </head>
-<style>
-    hr {
-        height: 2px !important;
-        border-width: 0;
-        color: gray;
-        background-color: gray
-    }
-    img{
-        max-width: 70% !important;
-        margin-left: 16%;
-    }
-</style>
 
 <body>
     <div class="container">
@@ -60,9 +54,41 @@
         <hr />
         <img src="img/revista/img10.jpg" class="img-fluid" alt="Responsive image">
     </div>
+    <a id="subirTopo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!--fontawesome-->
+    <script defer src="fontawesome/js/all.js"></script>
+
+    <!--Java script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+
+    <!--Javascript botao subir-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+
+            jQuery("#subirTopo").hide();
+
+            jQuery('a#subirTopo').click(function () {
+                jQuery('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                } else {
+                    jQuery('#subirTopo').fadeOut();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
